@@ -2,16 +2,19 @@
   "expo": {
     "name": "Kapture",
     "slug": "Kapture",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#000000",
     "ios": {
+      "bundleIdentifier": "com.han.kapture",
       "supportsTablet": true
     },
     "android": {
+      "package": "com.han.kapture",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#000000",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +23,23 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Kapture 需要使用相机来拍照和录像。",
+          "microphonePermission": "Kapture 需要使用麦克风来为视频录制声音。",
+          "barcodeScannerEnabled": false
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Kapture 需要访问相册以保存你的作品。",
+          "savePhotosPermission": "Kapture 需要保存拍摄的照片和视频到相册。"
+        }
+      ]
+    ]
   }
 }
