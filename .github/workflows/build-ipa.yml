@@ -74,10 +74,18 @@ jobs:
 
       - name: Package IPA
         run: |
+          APP_PATH=$(find ios/build/Build/Products/Release-iphoneos -maxdepth 1 -name "*.app" -type d | head -n 1)
+          echo "APP_PATH=$APP_PATH"
+          if [ -z "$APP_PATH" ] || [ ! -d "$APP_PATH" ]; then
+            echo "ERROR: .app not found. Products tree:"
+            find ios/build/Build/Products -maxdepth 4 | head -n 60
+            exit 1
+          fi
           mkdir -p Payload
-          cp -R "ios/build/Build/Products/Release-iphoneos/${{ steps.scheme.outputs.name }}.app" Payload/
+          cp -R "$APP_PATH" Payload/
           zip -qry Kapture-unsigned.ipa Payload
-          ls -lh Kapture-unsigned.ipa
+          echo "--- app size:"; du -sh "$APP_PATH"
+          echo "--- ipa:"; ls -lh Kapture-unsigned.ipa
 
       - name: Upload IPA
         uses: actions/upload-artifact@v4
@@ -87,3 +95,22 @@ jobs:
           retention-days: 30
           compression-level: 0
           if-no-files-found: error
+
+      - name: Upload diagnostic to repo
+        if: always()
+        run: |
+          {
+            echo "=== run $GITHUB_RUN_ID (job status=${{ job.status }})"
+            echo "--- .app found:"
+            find ios/build/Build/Products -maxdepth 4 -name "*.app" -type d 2>/dev/null
+            echo "--- IPA:"
+            ls -lh Kapture-unsigned.ipa 2>/dev/null || echo "(no ipa)"
+            echo "--- Payload contents:"
+            ls -R Payload 2>/dev/null | head -n 30 || echo "(no Payload)"
+          } > build-diagnostic.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b ci-logs 2>/dev/null || git checkout ci-logs
+          git add build-diagnostic.txt
+          git commit -m "ci: diagnostic run $GITHUB_RUN_ID" || echo "no changes"
+          git push --force origin ci-logs
