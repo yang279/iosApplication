@@ -103,10 +103,13 @@ jobs:
             echo "=== run $GITHUB_RUN_ID (job status=${{ job.status }})"
             echo "--- .app found:"
             find ios/build/Build/Products -maxdepth 4 -name "*.app" -type d 2>/dev/null
+            echo "--- .app contents:"
+            APP=$(find ios/build/Build/Products -maxdepth 4 -name "*.app" -type d 2>/dev/null | head -n 1)
+            ls -laR "$APP" 2>/dev/null | head -n 80
             echo "--- IPA:"
             ls -lh Kapture-unsigned.ipa 2>/dev/null || echo "(no ipa)"
-            echo "--- Payload contents:"
-            ls -R Payload 2>/dev/null | head -n 30 || echo "(no Payload)"
+            echo "--- xcodebuild.log tail:"
+            tail -n 150 xcodebuild.log 2>/dev/null || echo "(no xcodebuild.log)"
           } > build-diagnostic.txt
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
