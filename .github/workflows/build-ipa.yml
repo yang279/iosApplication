@@ -10,6 +10,8 @@ jobs:
     name: Build unsigned IPA
     runs-on: macos-latest
     timeout-minutes: 60
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
@@ -50,7 +52,19 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGN_IDENTITY='' \
             CODE_SIGN_ENTITLEMENTS='' \
-            clean build
+            clean build 2>&1 | tee xcodebuild.log
+
+      - name: Upload failure log to repo
+        if: failure()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b ci-logs 2>/dev/null || git checkout ci-logs
+          tail -c 200000 xcodebuild.log > xcodebuild.log.tmp
+          mv xcodebuild.log.tmp xcodebuild.log
+          git add xcodebuild.log
+          git commit -m "ci: xcodebuild failure log" || echo "no changes"
+          git push --force origin ci-logs
 
       - name: Package IPA
         run: |
