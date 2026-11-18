@@ -36,9 +36,11 @@ jobs:
       - name: Detect Xcode scheme
         id: scheme
         run: |
-          workspace=$(ls ios/*.xcworkspace | head -n 1)
+          workspace=$(ls -d ios/*.xcworkspace | head -n 1)
           name=$(basename "$workspace" .xcworkspace)
           echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "workspace=$workspace" >> "$GITHUB_OUTPUT"
+          echo "detected workspace: $workspace, scheme: $name"
 
       - name: Build unsigned app
         run: |
