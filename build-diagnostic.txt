@@ -1,0 +1,169 @@
+=== run 44531317626 (job status=success)
+--- .app found:
+ios/build/Build/Products/Release-iphoneos/Kapture.app
+--- .app contents:
+total 7352
+drwxr-xr-x   19 runner  staff      608 Nov 19 13:17 .
+drwxr-xr-x@ 109 runner  staff     3488 Nov 19 13:17 ..
+-rw-r--r--    1 runner  staff    15970 Nov 19 13:16 AppIcon60x60@2x.png
+-rw-r--r--    1 runner  staff    23229 Nov 19 13:16 AppIcon76x76@2x~ipad.png
+-rw-r--r--    1 runner  staff  1261912 Nov 19 13:17 Assets.car
+drwxr-xr-x    4 runner  staff      128 Nov 19 13:16 EXConstants.bundle
+-rw-r--r--    1 runner  staff      173 Nov 19 13:16 Expo.plist
+drwxr-xr-x    4 runner  staff      128 Nov 19 13:15 ExpoConstants_privacy.bundle
+drwxr-xr-x    3 runner  staff       96 Nov 19 13:15 ExpoFileSystem_privacy.bundle
+drwxr-xr-x    3 runner  staff       96 Nov 19 13:15 ExpoMediaLibrary_privacy.bundle
+drwxr-xr-x   12 runner  staff      384 Nov 19 13:17 Frameworks
+-rw-r--r--    1 runner  staff     2386 Nov 19 13:17 Info.plist
+-rwxr-xr-x    1 runner  staff   875856 Nov 19 13:17 Kapture
+-rw-r--r--    1 runner  staff  1562002 Nov 19 13:17 main.jsbundle
+-rw-r--r--    1 runner  staff        8 Nov 19 13:17 PkgInfo
+-rw-r--r--    1 runner  staff      986 Nov 19 13:16 PrivacyInfo.xcprivacy
+drwxr-xr-x    4 runner  staff      128 Nov 19 13:15 React-cxxreact_privacy.bundle
+drwxr-xr-x    4 runner  staff      128 Nov 19 13:15 React-timing_privacy.bundle
+drwxr-xr-x    5 runner  staff      160 Nov 19 13:16 SplashScreen.storyboardc
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/EXConstants.bundle:
+total 16
+drwxr-xr-x   4 runner  staff   128 Nov 19 13:16 .
+drwxr-xr-x  19 runner  staff   608 Nov 19 13:17 ..
+-rw-r--r--   1 runner  staff  1337 Nov 19 13:16 app.config
+-rw-r--r--   1 runner  staff   770 Nov 19 13:15 Info.plist
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/ExpoConstants_privacy.bundle:
+total 16
+drwxr-xr-x   4 runner  staff  128 Nov 19 13:15 .
+drwxr-xr-x  19 runner  staff  608 Nov 19 13:17 ..
+-rw-r--r--   1 runner  staff  792 Nov 19 13:15 Info.plist
+-rw-r--r--   1 runner  staff  607 Nov 19 13:15 PrivacyInfo.xcprivacy
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/ExpoFileSystem_privacy.bundle:
+total 8
+drwxr-xr-x   3 runner  staff   96 Nov 19 13:15 .
+drwxr-xr-x  19 runner  staff  608 Nov 19 13:17 ..
+-rw-r--r--   1 runner  staff  794 Nov 19 13:15 Info.plist
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/ExpoMediaLibrary_privacy.bundle:
+total 8
+drwxr-xr-x   3 runner  staff   96 Nov 19 13:15 .
+drwxr-xr-x  19 runner  staff  608 Nov 19 13:17 ..
+-rw-r--r--   1 runner  staff  798 Nov 19 13:15 Info.plist
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks:
+total 0
+drwxr-xr-x  12 runner  staff  384 Nov 19 13:17 .
+drwxr-xr-x  19 runner  staff  608 Nov 19 13:17 ..
+drwxr-xr-x   4 runner  staff  128 Oct 28 14:24 ExpoCamera.framework
+drwxr-xr-x   5 runner  staff  160 Nov 17 11:53 ExpoFileSystem.framework
+drwxr-xr-x   4 runner  staff  128 Nov 11 09:37 ExpoFont.framework
+drwxr-xr-x   5 runner  staff  160 Nov 11 09:37 ExpoMediaLibrary.framework
+drwxr-xr-x   4 runner  staff  128 Nov 11 10:00 ExpoModulesCore.framework
+drwxr-xr-x   4 runner  staff  128 Nov 19 13:16 ExpoModulesJSI.framework
+drwxr-xr-x   4 runner  staff  128 Nov 11 10:00 ExpoModulesWorklets.framework
+drwxr-xr-x   4 runner  staff  128 Oct 26 13:55 hermesvm.framework
+drwxr-xr-x   6 runner  staff  192 Oct 27 12:38 React.framework
+drwxr-xr-x   8 runner  staff  256 Oct 27 12:12 ReactNativeDependencies.framework
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks/ExpoCamera.framework:
+total 1912
+drwxr-xr-x   4 runner  staff     128 Oct 28 14:24 .
+drwxr-xr-x  12 runner  staff     384 Nov 19 13:17 ..
+-rwxr-xr-x   1 runner  staff  972936 Oct 28 14:24 ExpoCamera
+-rw-r--r--   1 runner  staff     755 Oct 28 14:24 Info.plist
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks/ExpoFileSystem.framework:
+total 2600
+drwxr-xr-x   5 runner  staff      160 Nov 17 11:53 .
+drwxr-xr-x  12 runner  staff      384 Nov 19 13:17 ..
+drwxr-xr-x   4 runner  staff      128 Nov 17 11:53 expo-file-system_ExpoFileSystem.bundle
+-rwxr-xr-x   1 runner  staff  1323920 Nov 17 11:53 ExpoFileSystem
+-rw-r--r--   1 runner  staff      767 Nov 17 11:53 Info.plist
+
+ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks/ExpoFileSystem.framework/expo-file-system_ExpoFileSystem.bundle:
+total 16
+drwxr-xr-x  4 runner  staff  128 Nov 17 11:53 .
+--- IPA:
+-rw-r--r--  1 runner  staff   9.3M Nov 19 13:17 Kapture-unsigned.ipa
+--- xcodebuild errors (filtered):
+--- context before BUILD FAILED:
+--- xcodebuild.log tail:
+React.framework/RCTI18nStrings.bundle/zu.lproj/Localizable.strings
+React.framework/RCTI18nStrings.bundle/zu.lproj/fbt_language_pack.bin
+
+sent 11982159 bytes  received 1948 bytes  100622225 bytes/sec
+total size is 11967021  speedup is 1.00
+rsync --delete -av --filter P .*.?????? --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "/Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/XCFrameworkIntermediates/ReactNativeDependencies/ReactNativeDependencies.framework" "/Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks"
+Transfer starting: 15 files
+ReactNativeDependencies.framework/
+ReactNativeDependencies.framework/Info.plist
+ReactNativeDependencies.framework/ReactNativeDependencies
+ReactNativeDependencies.framework/ReactNativeDependencies_SocketRocket.bundle/
+ReactNativeDependencies.framework/ReactNativeDependencies_SocketRocket.bundle/Info.plist
+ReactNativeDependencies.framework/ReactNativeDependencies_SocketRocket.bundle/PrivacyInfo.xcprivacy
+ReactNativeDependencies.framework/ReactNativeDependencies_boost.bundle/
+ReactNativeDependencies.framework/ReactNativeDependencies_boost.bundle/Info.plist
+ReactNativeDependencies.framework/ReactNativeDependencies_boost.bundle/PrivacyInfo.xcprivacy
+ReactNativeDependencies.framework/ReactNativeDependencies_folly.bundle/
+ReactNativeDependencies.framework/ReactNativeDependencies_folly.bundle/Info.plist
+ReactNativeDependencies.framework/ReactNativeDependencies_folly.bundle/PrivacyInfo.xcprivacy
+ReactNativeDependencies.framework/ReactNativeDependencies_glog.bundle/
+ReactNativeDependencies.framework/ReactNativeDependencies_glog.bundle/Info.plist
+ReactNativeDependencies.framework/ReactNativeDependencies_glog.bundle/PrivacyInfo.xcprivacy
+
+sent 1266597 bytes  received 270 bytes  83898476 bytes/sec
+total size is 1264299  speedup is 1.00
+rsync --delete -av --filter P .*.?????? --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "/Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/XCFrameworkIntermediates/hermes-engine/Pre-built/hermesvm.framework" "/Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks"
+Transfer starting: 3 files
+hermesvm.framework/
+hermesvm.framework/Info.plist
+hermesvm.framework/hermesvm
+
+sent 6362087 bytes  received 70 bytes  117599944 bytes/sec
+total size is 6360907  speedup is 1.00
+
+ExtractAppIntentsMetadata (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.u4xKYM/Metal.xctoolchain --module-name Kapture --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 16.4 --bundle-identifier com.han.kapture --output /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app --target-triple arm64-apple-ios16.4 --binary-file /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Kapture --dependency-file /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Objects-normal/arm64/Kapture_dependency_info.dat --stringsdata-file /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Objects-normal/arm64/Kapture.SwiftFileList --metadata-file-list /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Kapture.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Kapture.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Objects-normal/arm64/Kapture.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-11-19 13:17:18.578 appintentsmetadataprocessor[6667:23808] Starting appintentsmetadataprocessor export
+2026-11-19 13:17:18.585 appintentsmetadataprocessor[6667:23808] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Kapture --scan-folder /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks --scan-folder /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/PlugIns --scan-folder /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/SystemExtensions --scan-folder /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Extensions --platform iphoneos --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.u4xKYM/Metal.xctoolchain --toolchain /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+AppIntentsSSUTraining (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Info.plist --temp-dir-path /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/ssu --bundle-id com.han.kapture --product-path /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app --extracted-metadata-path /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Metadata.appintents --metadata-file-list /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Intermediates.noindex/Kapture.build/Release-iphoneos/Kapture.build/Kapture.DependencyMetadataFileList --source-file /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app/Info.plist --archive-ssu-assets
+2026-11-19 13:17:18.619 appintentsnltrainingprocessor[6668:23810] Parsing options for appintentsnltrainingprocessor
+2026-11-19 13:17:18.620 appintentsnltrainingprocessor[6668:23810] Starting AppIntents SSU YAML Generation
+2026-11-19 13:17:18.625 appintentsnltrainingprocessor[6668:23810] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    builtin-RegisterExecutionPolicyException /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app
+
+Validate /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    builtin-validationUtility /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app -validate-for-store -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app (in target 'Kapture' from project 'Kapture')
+    cd /Users/runner/work/iosApplication/iosApplication/ios
+    /usr/bin/touch -c /Users/runner/work/iosApplication/iosApplication/ios/build/Build/Products/Release-iphoneos/Kapture.app
+
+note: Run script build phase '[CP-User] [Hermes] Replace Hermes for the right configuration, if needed' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'hermes-engine' from project 'Pods')
+note: Run script build phase '[CP-User] [RNDeps] Replace React Native Dependencies for the right configuration, if needed' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ReactNativeDependencies' from project 'Pods')
+note: Run script build phase '[CP-User] [RN]Check FBReactNativeSpec' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'React-RCTFBReactNativeSpec' from project 'Pods')
+note: Run script build phase '[CP-User] [RNCore] Replace React Native Core for the right configuration, if needed' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'React-Core-prebuilt' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoModulesWorklets XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoModulesWorklets' from project 'Pods')
+note: Run script build phase '[CP-User] Build ExpoModulesJSI xcframework' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoModulesJSI' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoModulesCore XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoModulesCore' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoMediaLibrary XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoMediaLibrary' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoFont XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoFont' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoFileSystem XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoFileSystem' from project 'Pods')
+note: Run script build phase '[CP-User] [Expo] Switch ExpoCamera XCFramework for build configuration' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'ExpoCamera' from project 'Pods')
+note: Run script build phase 'Bundle React Native code and images' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Kapture' from project 'Kapture')
+note: Run script build phase '[Expo] Configure project' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Kapture' from project 'Kapture')
+note: Run script build phase '[CP-User] Generate app.config for prebuilt Constants.manifest' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'EXConstants' from project 'Pods')
+** BUILD SUCCEEDED **
+
