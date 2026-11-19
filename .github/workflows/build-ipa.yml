@@ -30,6 +30,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Select Xcode 26
+        run: |
+          echo "Available Xcode versions:"
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          XCODE26=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -n 1)
+          if [ -n "$XCODE26" ]; then
+            echo "DEVELOPER_DIR=$XCODE26/Contents/Developer" >> "$GITHUB_ENV"
+            echo "Selected: $XCODE26"
+          else
+            echo "WARNING: no Xcode 26 found; keeping default"
+          fi
+
       - name: Generate iOS project
         run: npx expo prebuild --platform ios --no-install
 
